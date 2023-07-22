@@ -1,0 +1,35 @@
+﻿@model CQRS.Presentation.CQRSPattern.Commands.CreateProductCommand
+
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<div class="container">
+    <br /><br />
+    <h2>Yeni Ürün Ekle</h2>
+    <br />
+    <form method="post">
+        <div class="cow">
+            <div class="col-md-6 mb-2">
+                <input type="text" class="form-control" placeholder="Ürün İsmi" asp-for="ProductName" />
+            </div>
+            <div class="col-md-6 mb-2">
+                <input type="text" class="form-control" placeholder="Ürün Markası" asp-for="Brand"/>
+            </div>
+            <div class="col-md-6  mb-2">
+                <input type="text" class="form-control" placeholder="Ürün Kategorisi" asp-for="Category"/>
+            </div>
+            <div class="col-md-6  mb-2">
+                <input type="number" class="form-control" placeholder="Ürün Fiyatı" asp-for="ProductPrice"/>
+            </div>
+            <div class="col-md-6  mb-2">
+                <input type="number" class="form-control" placeholder="Ürün Stok" asp-for="Stock"/>
+            </div>
+            <br/>
+            <button class="btn btn-primary">Ürünü Ekle</button>
+            <a href="/Default/Index/" class="btn btn-warning">Değişikliklerden Vazgeç</a>
+        </div>
+    </form>
+</div>

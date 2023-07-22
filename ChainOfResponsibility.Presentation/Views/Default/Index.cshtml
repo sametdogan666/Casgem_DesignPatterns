@@ -1,0 +1,21 @@
+﻿@model CoR.Presentation.DAL.CustomerProcess
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+<div class="container">
+    <br/><br/>
+    <h2>Para Çekme Sayfası</h2>
+
+    <form method="post">
+        <label>Müşteri Adı</label>
+        <input type="text" asp-for="CustomerName" class="form-control"/>
+        <br />
+        <label>Tutar</label>
+        <input type="number" asp-for="Amount" class="form-control" />
+        <br />
+        <button class="btn btn-info">Para Çek</button>
+    </form>
+</div>
