@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoR.Presentation", "ChainOfResponsibility.Presentation\CoR.Presentation.csproj", "{C42CC940-F23B-478B-90DA-FD15C0535BCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Presentation", "CQRS.Presentation\CQRS.Presentation.csproj", "{0EBCB1A8-2304-4F01-A61D-A0D21B212BB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS.Presentation", "CQRS.Presentation\CQRS.Presentation.csproj", "{0EBCB1A8-2304-4F01-A61D-A0D21B212BB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.Presentation", "Mediator.Presentation\Mediator.Presentation.csproj", "{AC0B93D9-2A25-4418-B62A-4406BD885C2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0EBCB1A8-2304-4F01-A61D-A0D21B212BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBCB1A8-2304-4F01-A61D-A0D21B212BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBCB1A8-2304-4F01-A61D-A0D21B212BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0B93D9-2A25-4418-B62A-4406BD885C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0B93D9-2A25-4418-B62A-4406BD885C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0B93D9-2A25-4418-B62A-4406BD885C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0B93D9-2A25-4418-B62A-4406BD885C2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
