@@ -2,6 +2,7 @@
 using Mediator.Presentation.MediatorPattern.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Mediator.Presentation.Controllers;
 
@@ -39,6 +40,22 @@ public class DefaultController : Controller
     public async Task<IActionResult> DeleteProduct(int id)
     {
         await _mediator.Send(new DeleteProductCommand(id));
+
+        return RedirectToAction("Index");
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> UpdateProduct(int id)
+    {
+        var result = await _mediator.Send(new GetProductUpdateByIdQuery(id));
+
+        return View(result);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> UpdateProduct(UpdateProductCommand command)
+    {
+        await _mediator.Send(command);
 
         return RedirectToAction("Index");
     }
